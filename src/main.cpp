@@ -202,7 +202,7 @@ void loop() {
     valueRange.set("values/[3]/[0]", distanceCm);
 
     // Append values to the sheet
-    bool success = GSheet.values.append(&response, spreadsheetId,"Sheet1!A1", &valueRange);
+    bool success = GSheet.values.append(&response, spreadsheetId,"Sheet1!A2", &valueRange);
     if (success){
       response.toString(Serial, true);
       valueRange.clear();
